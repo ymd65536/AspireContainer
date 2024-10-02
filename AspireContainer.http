@@ -1,0 +1,6 @@
+@AspireContainer_HostAddress = http://localhost:5038
+
+GET {{AspireContainer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
