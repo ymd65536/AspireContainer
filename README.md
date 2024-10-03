@@ -37,6 +37,11 @@ dotnet workload install aspire
 }
 ```
 
+ブラウザでアクセス
+
+- [webapi](https://supreme-funicular-g4945xp7672vqqx-5038.app.github.dev/weatherforecast)
+- [BlazorApp](https://supreme-funicular-g4945xp7672vqqx-5016.app.github.dev/)
+
 ## なんか動かないなと思ったら
 
 GitHub Codespacesで動かしているときに動かないと思ったらTrusted Domainやプロトコル、公開の状態をみると良い。
