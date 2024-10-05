@@ -6,6 +6,18 @@
 docker run --rm -it -p 18888:18888 -p 4317:18889 -d --name aspire-dashboard mcr.microsoft.com/dotnet/aspire-dashboard:latest
 ```
 
+```bash
+dotnet run --project BlazorApp
+```
+
+```bash
+dotnet run --project webapi
+```
+
+```text
+https://fluffy-space-fortnight-jj6j4rgqwr2q759-5038.app.github.dev/weatherforecast
+```
+
 ## webapiをトレース
 
 ```bash
@@ -45,3 +57,10 @@ dotnet workload install aspire
 ## なんか動かないなと思ったら
 
 GitHub Codespacesで動かしているときに動かないと思ったらTrusted Domainやプロトコル、公開の状態をみると良い。
+
+## 片付け
+
+```bash
+docker stop $(docker ps -q)
+docker rmi $(docker images -q)
+```
